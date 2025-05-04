@@ -1,0 +1,336 @@
+html, body {
+    background-color: rgb(13,12,41);
+    height: auto;
+    width: auto;
+    max-height: 768px;
+    max-width: 1024px;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    height: auto;
+    width: auto;
+    background-repeat: no-repeat;
+    max-height: 768px;
+    max-width: 1024px;
+    position: absolute;
+}
+
+.fondouno {
+    background-image: url(imgs/fondo1.png);
+    size: 100%;
+    height: 768px;
+    width: 1024px;
+    position: absolute;
+}
+
+.fondodos {
+    background-image: url(imgs/fondo2.png);
+    size: 100%;
+    height: 768px;
+    width: 1024px;
+    position: absolute;
+}
+
+.primeraparte{
+    height: auto;
+    width: auto;
+    max-width: 1024px;
+    max-height: 720px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.mensajito{
+    background-image: url(imgs/mensajito.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    top: 40px;
+    left: 12px;
+    height: 700px;
+    width: 1012px;
+    position: absolute;
+    animation: movimientoletras 15s infinite;
+}
+
+@keyframes movimientoletras {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 1%);
+    }
+}
+
+.holim {
+    background-image: url(imgs/holim.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 768px;
+    max-height: 650px;
+    width: 1024px;
+    position: absolute;
+    animation: movimientoletras 6s infinite;
+}
+
+.zorro {
+    background-image: url(imgs/zorro.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 768px;
+    max-height: 650px;
+    width: 1024px;
+    position: absolute;
+    animation: movimientoletras 10s infinite;
+}
+
+.golpegato {
+    height: auto;
+    width: auto;
+    max-width: 1024px;
+    max-height: 720px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.pegale {
+    background-image: url(imgs/pegale.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 768px;
+    width: 1024px;
+    max-height: 650px;
+    position: absolute;
+    animation: movimientoletras 3s infinite;
+}
+
+.nubegatito {
+    background-image: url(imgs/nubegatito.png);
+}
+.gatitonormal {
+    background-image: url(imgs/gatitonormal.png);
+    display: flex;
+}
+.gatitogolpe {
+    background-image: url(imgs/gatitogolpe.png);
+    display: none;
+}
+.nubegatito, .gatitonormal, .gatitogolpe {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 768px;
+    width: 1024px;
+    max-height: 650px;
+    position: absolute;
+    animation: movimientoletras 5s infinite;
+}
+
+.botonpegar {
+    height: 250px;
+    width: 300px;
+    top: 80px;
+    left: 680px;
+    position: absolute;
+    animation: movimientoletras 5s infinite;
+}
+
+.corazones {
+    position: absolute;
+    height: 768px;
+    width: 1024px;
+}
+
+@keyframes aparecercora {
+    0% {
+        transform: translate(0px, 0px);
+        opacity:90%;
+        display: flex;
+    }
+    50%{
+        
+        transform: translate(0px, -20px);
+        opacity: 70%;
+        display: flex;
+    }
+    100%{
+        transform: translate(0px, -40px);
+        opacity: 0%;
+        display: none;
+    }
+}
+
+.animacioncora {
+    animation: aparecercora 2.5s;
+}
+.postiontop {
+    top: -100px;
+}
+.postionleft {
+    left: 450px;
+}
+
+.maltratame, .amosalesita, .hablarcontigo, .graciaspor, .kieromucho, .perfeccion, .siemprecontigo, .teadoro, .voz{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 360px;
+    width: 360px;
+    display: none;
+    opacity: 90%;
+    position: absolute;
+}
+.maltratame {
+    background-image: url(imgs/cmaltratame.png);}
+.amosalesita {
+    background-image: url(imgs/camosalesita.png);}
+.hablarcontigo{
+    background-image: url(imgs/chablarcontigo.png);}
+.graciaspor{
+    background-image: url(imgs/cgraciaspor.png);}
+.kieromucho{
+    background-image: url(imgs/ckieromucho.png);}
+.perfeccion{
+    background-image: url(imgs/cperfeccion.png);}
+.siemprecontigo{
+    background-image: url(imgs/csiemprecontigo.png);}
+.teadoro{
+    background-image: url(imgs/cteadoro.png);}
+.voz{
+    background-image: url(imgs/cvoz.png);}
+
+.aparecer {
+    display: flex;
+}
+.desaparecer {
+    display: none;
+}
+.clickea {
+    background-image: url(imgs/clickea.png);
+    position: absolute;
+    height: 720px;
+    width: 1024px;
+    top: -30px;
+    left: -20px;
+    animation: movimientoletras 5s infinite;
+}
+
+.galaxia {
+    height: 423px;
+    width: 423px;
+    max-height: 390px;
+    top: 325px;
+    left: 585px;
+    position: absolute;
+}
+
+@keyframes aumentogalaxia {
+    0%,100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+.galaxiapolvo {
+    background-image: url(imgs/galaxiapolvo.png);
+    background-size: 100%;
+    height: 423px;
+    width: 423px;
+    max-height: 390px;
+    position: absolute;
+    animation: aumentogalaxia 8s infinite;
+    animation-delay: 4s;
+}
+.galaxiacora {
+    background-image: url(imgs/galaxiacora.png);
+    background-size: 100%;
+    height: 423px;
+    width: 423px;
+    max-height: 390px;
+    position: absolute;
+    animation: aumentogalaxia 8s infinite;
+}
+.botongalaxia {
+    position: absolute;
+    height: 400px;
+    width: 423px;
+    display: flex;
+    top: 325px;
+    left: 585px;
+}
+@keyframes aumentogalaxiarojo {
+    0%,100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+}
+.mensajerojo {
+    position: absolute;
+    height: 479px;
+    width: 479px;
+    top: 280px;
+    left: 535px;
+}
+.galaxiaroja {
+    background-image: url(imgs/galaxiaroja.png);
+    animation: aumentogalaxiarojo 6s infinite;
+}
+.mensajitorojo {
+    background-image: url(imgs/mensajitorojo.png);
+    animation: aumentogalaxiarojo 6s infinite;
+    animation-delay: 3s;
+}
+.galaxiaroja, .mensajitorojo {
+    position: absolute;
+    background-size: 100%;
+    height: 479px;
+    width: 479px;
+    display: none;
+}
+@keyframes cositaroja1 {
+    0% {
+        display: flex;
+        opacity: 0%;
+    }
+    100% {
+        display: flex;
+        opacity: 100%;
+    }
+}
+@keyframes cositaroja2 {
+    0% {
+        transform: scale(0.3);
+        display: flex;
+        opacity: 0%;
+    }
+    100% {
+        transform: scale(1);
+        display: flex;
+        opacity: 100%;
+    }
+}
+@keyframes desvanecerrojo {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+        display: none;
+    }
+}
+.aparecerrojo1 {
+    animation: cositaroja1 2s;
+    display: flex;
+}
+.aparecerrojo2 {
+    animation: cositaroja2 3s;
+    display: flex;
+}
+.desvanecer {
+    animation: desvanecerrojo 3s ;
+}
+.desvanecer2 {
+    animation: desvanecerrojo 1.5s ;
+}
